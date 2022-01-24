@@ -1,0 +1,86 @@
+// COLORS
+$royal-blue: #6a5ae0;
+$dull-lavender: #9087e5;
+$pink-salmon: #ff8fa2;
+$pastel-pink: #ffd6dd;
+$hawkes-blue: #c4d0fb;
+$mint-tulip: #c9f2e9;
+$black: #0c092a;
+$grey-1: #49465f;
+$grey-2: #858494;
+$grey-3: #cccccc;
+$grey-4: #e6e6e6;
+$grey-5: #efeefc;
+$white: #ffffff;
+
+// FONTS:
+
+// BUTTONS:
+
+@mixin btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 133px;
+	width: 327px;
+	height: 56px;
+	border-radius: 20px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+@mixin btn-small {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 20px;
+	width: 118px;
+	height: 44px;
+	background: #ffffff;
+	border-radius: 20px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	color: $royal-blue;
+	border: none;
+}
+
+@mixin btn-primary {
+	@include btn;
+	background-color: $royal-blue;
+	color: $white;
+}
+
+@mixin btn-secondary {
+	@include btn;
+	background-color: $grey-5;
+	color: $royal-blue;
+}
+
+@mixin btn-tertiary {
+	@include btn;
+	background-color: $white;
+	color: $royal-blue;
+	border: none;
+}
+
+@mixin btn-google {
+	@include btn;
+	background-color: $white;
+	border: 2px solid $grey-4;
+	box-sizing: border-box;
+	color: $black;
+}
+
+@mixin btn-facebook {
+	@include btn;
+	background-color: #0056b3;
+	color: $white;
+}

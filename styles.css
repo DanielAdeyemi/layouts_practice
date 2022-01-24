@@ -1,0 +1,22 @@
+body {
+  background-color: none;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  width: 118px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 20px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #6a5ae0;
+  border: none;
+}/*# sourceMappingURL=styles.css.map */
