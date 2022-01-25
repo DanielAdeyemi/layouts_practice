@@ -21,6 +21,9 @@
   top: 5.17px;
   color: #ffffff;
 }
+.home section {
+  position: relative;
+}
 .home section .greetings {
   margin-top: 16px;
   position: absolute;
@@ -66,6 +69,25 @@
 .home section .greetings .avatar {
   border-radius: 50%;
   margin-left: auto;
+}
+.home section .card-one {
+  position: absolute;
+  width: 327px;
+  height: 84px;
+  left: 24px;
+  top: 144px;
+  background: #ffccd5;
+  border-radius: 20px;
+}
+.home section .card-one .pie {
+  border-radius: 50%;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 24px;
+  top: 16px;
+  background: #ffb3c0;
+  background: conic-gradient(#ff8fa2 65%, #ffb3c0 0);
 }
 .home footer {
   position: absolute;
