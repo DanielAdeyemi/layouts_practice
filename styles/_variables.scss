@@ -84,3 +84,20 @@ $white: #ffffff;
 	background-color: #0056b3;
 	color: $white;
 }
+
+@mixin header {
+	position: relative;
+	width: 375px;
+	height: 44px;
+	left: 0px;
+	top: 0px;
+}
+
+@mixin time-light {
+	position: absolute;
+	width: 28.43px;
+	height: 11.09px;
+	left: 12.45px;
+	top: 5.17px;
+	color: $white;
+}

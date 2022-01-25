@@ -1,0 +1,74 @@
+.home {
+	header {
+		@include header;
+		.left {
+			position: relative;
+			width: 54px;
+			height: 21px;
+			left: 21px;
+			top: 12px;
+			border-radius: 32px;
+			#time-light {
+				@include time-light;
+			}
+		}
+	}
+
+	section {
+		.greetings {
+			margin-top: 16px;
+			position: absolute;
+			width: 327px;
+			height: 60px;
+			left: 24px;
+			display: flex;
+			#hi {
+				position: absolute;
+				width: 196px;
+				height: 60px;
+				left: 24px;
+				#greet {
+					height: 18px;
+					left: 52px;
+					font-family: Rubik;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 150%;
+					/* identical to box height, or 18px */
+					display: flex;
+					align-items: center;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+					color: #ffd6dd;
+				}
+
+				.name {
+					width: 196px;
+					height: 36px;
+					font-family: Rubik;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 150%;
+					/* identical to box height, or 36px */
+					display: flex;
+					align-items: center;
+					color: #ffffff;
+				}
+			}
+			.avatar {
+				border-radius: 50%;
+				margin-left: auto;
+			}
+		}
+	}
+
+	footer {
+		position: absolute;
+		width: 375px;
+		height: 83px;
+		left: 0px;
+		bottom: 0;
+	}
+}
