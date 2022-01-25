@@ -31,7 +31,7 @@
 				#greet {
 					height: 18px;
 					left: 52px;
-					font-family: Rubik;
+					font-family: "Rubik";
 					font-style: normal;
 					font-weight: 500;
 					font-size: 12px;
@@ -47,7 +47,7 @@
 				.name {
 					width: 196px;
 					height: 36px;
-					font-family: Rubik;
+					font-family: "Rubik";
 					font-style: normal;
 					font-weight: 500;
 					font-size: 24px;
@@ -69,19 +69,74 @@
 			width: 327px;
 			height: 84px;
 			left: 24px;
-			top: 144px;
+			top: 115px;
 			background: #ffccd5;
 			border-radius: 20px;
+			#recent-quiz {
+				position: absolute;
+				// width: 102px;
+				height: 20px;
+				left: 24px;
+				top: 16px;
+				font-family: "Rubik";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 140%;
+				text-transform: uppercase;
+				/* identical to box height, or 20px */
+				display: flex;
+				align-items: center;
+				letter-spacing: 0.08em;
+				color: #660012;
+				opacity: 0.5;
+			}
+
+			#name-recent {
+				position: absolute;
+				width: 161px;
+				height: 24px;
+				left: 56px;
+				top: 44px;
+				font-family: "";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 135%;
+				text-transform: capitalize;
+				color: #660012;
+			}
 			.pie {
+				/* Body/Small - Medium */
+				font-family: "Rubik";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 140%;
+				/* identical to box height, or 20px */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				/* Neutral / White */
+				color: $white;
 				border-radius: 50%;
 				position: absolute;
 				width: 48px;
 				height: 48px;
 				right: 24px;
 				top: 16px;
-				background: #ffb3c0;
 				background: conic-gradient($pink-salmon 65%, #ffb3c0 0);
 			}
+		}
+
+		.card-two {
+			position: absolute;
+			width: 327px;
+			height: 232px;
+			left: 26px;
+			top: 240px;
+			background: $dull-lavender;
+			border-radius: 20px;
 		}
 	}
 
