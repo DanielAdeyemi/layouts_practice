@@ -69,8 +69,8 @@
 			margin: 0 24px 24px;
 			padding: 16px 24px 0;
 			height: 84px;
-			background: url(../assets/Vector7.png) no-repeat,
-				url(../assets/Vector8.png) no-repeat, #ffccd5;
+			background: url(../assets/Vector7.png) repeat,
+				url(../assets/Vector8.png) repeat, #ffccd5;
 			border-radius: 20px;
 			display: flex;
 			flex-direction: row;
@@ -203,10 +203,19 @@
 	}
 
 	footer {
-		//position: absolute;
-		// width: 375px;
-		height: 83px;
-		left: 0px;
+		position: fixed;
+		background: $white;
+		display: flex;
+		width: 100%;
 		bottom: 0;
+		ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-grow: 1;
+			justify-content: space-evenly;
+			align-items: center;
+			width: 100%;
+		}
 	}
 }
