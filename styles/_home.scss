@@ -208,6 +208,11 @@
 		display: flex;
 		width: 100%;
 		bottom: 0;
+		#plus {
+			position: fixed;
+			bottom: 0;
+			margin: 0 calc(50% - 54px);
+		}
 		ul {
 			list-style: none;
 			padding: 0;
