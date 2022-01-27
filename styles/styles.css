@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 .home header {
   position: absolute;
-  width: 375px;
   height: 44px;
   left: 0px;
   top: 0px;
@@ -69,6 +68,7 @@
 }
 .home section .card-one {
   margin: 0 24px 24px;
+  padding: 16px 24px 0;
   height: 84px;
   background: url(../assets/Vector7.png) no-repeat, url(../assets/Vector8.png) no-repeat, #ffccd5;
   border-radius: 20px;
@@ -76,7 +76,6 @@
   flex-direction: row;
 }
 .home section .card-one #recent-quiz {
-  padding: 16px 24px 8px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -108,6 +107,7 @@
 }
 .home section .card-one .pie {
   /* Body/Small - Medium */
+  margin-left: auto;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -116,7 +116,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: center;
   color: #ffffff;
   border-radius: 50%;
   width: 48px;
@@ -132,7 +131,7 @@
   justify-content: space-between;
 }
 .home section .card-two .top-featured {
-  padding: 16px;
+  padding: 16px 16px 0;
   display: flex;
 }
 .home section .card-two .top-featured p {
@@ -142,6 +141,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
+  margin: 16px 60px;
   /* identical to box height, or 20px */
   display: flex;
   align-items: center;
@@ -151,10 +151,12 @@
   opacity: 0.7;
   text-transform: uppercase;
 }
+.home section .card-two .top-featured img {
+  width: 48px;
+  height: 48px;
+}
 .home section .card-two .mid-featured {
-  height: 72px;
-  left: 63px;
-  top: 62px;
+  margin: 0 63px 16px 64px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -164,9 +166,9 @@
   color: #ffffff;
 }
 .home section .card-two .btm-featured {
-  margin-bottom: 32px;
   display: flex;
-  justify-content: center;
+  margin: 0 11px 32px 91px;
+  justify-content: flex-end;
 }
 .home section .card-two .btm-featured button {
   display: flex;
@@ -174,7 +176,6 @@
   justify-content: center;
   align-items: center;
   padding: 12px 20px;
-  width: 118px;
   height: 44px;
   background: #ffffff;
   border-radius: 20px;
@@ -186,6 +187,10 @@
   color: #6a5ae0;
   border: none;
   padding: 12px 16px;
+  margin-right: 11px;
+}
+.home section .card-two .btm-featured button svg {
+  margin-right: 10px;
 }
 .home section .card-two .btm-featured img {
   right: 15px;
@@ -204,5 +209,5 @@ body {
   background-color: #6a5ae0;
   margin: 0;
   padding: 0;
-  width: 100%;
+  overflow: hidden !important;
 }/*# sourceMappingURL=styles.css.map */

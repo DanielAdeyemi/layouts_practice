@@ -39,7 +39,6 @@ $white: #ffffff;
 	justify-content: center;
 	align-items: center;
 	padding: 12px 20px;
-	width: 118px;
 	height: 44px;
 	background: #ffffff;
 	border-radius: 20px;
@@ -87,7 +86,6 @@ $white: #ffffff;
 
 @mixin header {
 	position: absolute;
-	width: 375px;
 	height: 44px;
 	left: 0px;
 	top: 0px;

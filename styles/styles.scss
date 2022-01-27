@@ -6,5 +6,6 @@ body {
 	background-color: $royal-blue;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	// width: 100% !important;
+	overflow: hidden !important;
 }
