@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 .home header {
-  position: relative;
+  position: absolute;
   width: 375px;
   height: 44px;
   left: 0px;
@@ -8,7 +8,6 @@
 }
 .home header .left {
   position: relative;
-  width: 54px;
   height: 21px;
   left: 21px;
   top: 12px;
@@ -26,16 +25,11 @@
   position: relative;
 }
 .home section .greetings {
-  margin-top: 16px;
-  position: absolute;
-  width: 327px;
+  margin: 60px 24px 24px;
   height: 60px;
-  left: 24px;
   display: flex;
 }
 .home section .greetings #hi {
-  position: absolute;
-  width: 196px;
   height: 60px;
   left: 24px;
 }
@@ -54,8 +48,10 @@
   text-transform: uppercase;
   color: #ffd6dd;
 }
+.home section .greetings #hi #greet svg {
+  padding-right: 8px;
+}
 .home section .greetings #hi .name {
-  width: 196px;
   height: 36px;
   font-family: "Rubik";
   font-style: normal;
@@ -72,38 +68,32 @@
   margin-left: auto;
 }
 .home section .card-one {
-  position: absolute;
-  width: 327px;
+  margin: 0 24px 24px;
   height: 84px;
-  left: 24px;
-  top: 115px;
-  background: #ffccd5;
+  background: url(../assets/Vector7.png) no-repeat, url(../assets/Vector8.png) no-repeat, #ffccd5;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row;
 }
 .home section .card-one #recent-quiz {
-  position: absolute;
-  height: 20px;
-  left: 24px;
-  top: 16px;
+  padding: 16px 24px 8px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   text-transform: uppercase;
-  /* identical to box height, or 20px */
-  display: flex;
-  align-items: center;
   letter-spacing: 0.08em;
   color: #660012;
-  opacity: 0.5;
 }
-.home section .card-one #name-recent {
-  position: absolute;
-  width: 161px;
-  height: 24px;
-  left: 56px;
-  top: 44px;
+.home section .card-one #recent-quiz p {
+  opacity: 0.5;
+  margin: 0;
+}
+.home section .card-one #recent-quiz #name-recent {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -111,6 +101,10 @@
   line-height: 135%;
   text-transform: capitalize;
   color: #660012;
+  opacity: 1;
+}
+.home section .card-one #recent-quiz #name-recent svg {
+  margin-right: 8px;
 }
 .home section .card-one .pie {
   /* Body/Small - Medium */
@@ -119,28 +113,20 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  /* identical to box height, or 20px */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Neutral / White */
+  align-self: center;
   color: #ffffff;
   border-radius: 50%;
-  position: absolute;
   width: 48px;
   height: 48px;
-  right: 24px;
-  top: 16px;
   background: conic-gradient(#ff8fa2 65%, #ffb3c0 0);
 }
 .home section .card-two {
-  position: absolute;
-  width: 327px;
-  height: 232px;
-  left: 26px;
-  top: 240px;
-  background: #9087e5;
+  background: url(../assets/Group6.png) no-repeat right top, url(../assets/Group7.png) left bottom no-repeat, #9087e5;
   border-radius: 20px;
+  margin: 0 24px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,7 +136,6 @@
   display: flex;
 }
 .home section .card-two .top-featured p {
-  position: absolute;
   left: 124px;
   font-family: "Rubik";
   font-style: normal;
@@ -167,8 +152,6 @@
   text-transform: uppercase;
 }
 .home section .card-two .mid-featured {
-  position: absolute;
-  width: 200px;
   height: 72px;
   left: 63px;
   top: 62px;
@@ -203,10 +186,8 @@
   color: #6a5ae0;
   border: none;
   padding: 12px 16px;
-  width: 146px;
 }
 .home section .card-two .btm-featured img {
-  position: absolute;
   right: 15px;
   bottom: 42px;
 }
@@ -214,8 +195,6 @@
   border-radius: 50%;
 }
 .home footer {
-  position: absolute;
-  width: 375px;
   height: 83px;
   left: 0px;
   bottom: 0;
@@ -223,4 +202,7 @@
 
 body {
   background-color: #6a5ae0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

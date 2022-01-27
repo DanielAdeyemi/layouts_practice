@@ -86,7 +86,7 @@ $white: #ffffff;
 }
 
 @mixin header {
-	position: relative;
+	position: absolute;
 	width: 375px;
 	height: 44px;
 	left: 0px;
