@@ -222,16 +222,14 @@
   margin: 0 calc(50% - 54px);
   z-index: 10;
   content: url(../assets/New_Post.svg);
-  width: 100vw;
-  height: auto;
 }
 .home footer::after {
+  position: absolute;
   content: url(../assets/Vector.svg);
+  width: 100%;
   position: fixed;
-  bottom: 22px;
   z-index: -1;
   bottom: -24px;
-  right: -7px;
 }
 
 body {
