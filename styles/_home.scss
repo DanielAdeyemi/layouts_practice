@@ -204,14 +204,10 @@
 
 	footer {
 		position: fixed;
-		background: $white;
 		display: flex;
 		width: 100%;
 		bottom: 0;
 		#plus {
-			position: fixed;
-			bottom: 0;
-			margin: 0 calc(50% - 54px);
 		}
 		ul {
 			list-style: none;
@@ -222,6 +218,24 @@
 			justify-content: space-between;
 			align-items: center;
 			width: 100%;
+		}
+		&::before {
+			background: none;
+			position: fixed;
+			bottom: 0;
+			margin: 0 calc(50% - 54px);
+			z-index: 10;
+			content: url(../assets/New_Post.svg);
+			width: 100vw;
+			height: auto;
+		}
+		&::after {
+			content: url(../assets/Vector.svg);
+			position: fixed;
+			bottom: 22px;
+			z-index: -1;
+			bottom: -24px;
+			right: -7px;
 		}
 	}
 }
