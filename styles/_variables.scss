@@ -88,10 +88,11 @@ $large: 600px;
 }
 
 @mixin header {
-	position: absolute;
-	height: 44px;
 	left: 0px;
 	top: 0px;
+	position: fixed;
+	// width: 100%;
+	z-index: 100;
 }
 
 @mixin time-light {

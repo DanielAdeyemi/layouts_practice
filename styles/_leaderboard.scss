@@ -1,0 +1,26 @@
+.leaderboard {
+	header {
+		@include header;
+		position: relative;
+		margin: 16px 24px;
+		.top {
+			font-family: Rubik;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 150%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $white;
+			a {
+				left: 24px;
+				display: flex;
+				align-self: center;
+				position: fixed;
+			}
+		}
+	}
+	section {
+	}
+}

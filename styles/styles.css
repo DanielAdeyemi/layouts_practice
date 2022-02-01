@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 .home header {
-  position: absolute;
-  height: 44px;
   left: 0px;
   top: 0px;
+  position: fixed;
+  z-index: 100;
+  background: #6a5ae0;
+  height: 150px;
+  width: 100%;
 }
 .home header .left {
   position: relative;
@@ -20,19 +23,16 @@
   top: 5.17px;
   color: #ffffff;
 }
-.home section {
-  position: relative;
-}
-.home section .greetings {
+.home header .greetings {
   margin: 60px 24px 24px;
   height: 60px;
   display: flex;
 }
-.home section .greetings #hi {
+.home header .greetings #hi {
   height: 60px;
   left: 24px;
 }
-.home section .greetings #hi #greet {
+.home header .greetings #hi #greet {
   height: 18px;
   left: 52px;
   font-family: "Rubik";
@@ -47,10 +47,10 @@
   text-transform: uppercase;
   color: #ffd6dd;
 }
-.home section .greetings #hi #greet svg {
+.home header .greetings #hi #greet svg {
   padding-right: 8px;
 }
-.home section .greetings #hi .name {
+.home header .greetings #hi .name {
   height: 36px;
   font-family: "Rubik";
   font-style: normal;
@@ -62,9 +62,13 @@
   align-items: center;
   color: #ffffff;
 }
-.home section .greetings .avatar {
+.home header .greetings .avatar {
   border-radius: 50%;
   margin-left: auto;
+}
+.home section {
+  position: relative;
+  margin-top: 150px;
 }
 .home section .card-one {
   margin: 0 24px 24px;
@@ -243,7 +247,7 @@
   padding: 8px 28px 8px 8px;
 }
 .home section .card-three .quiz-card .left {
-  margin-right: 16px;
+  margin: 6px 16px 0 0;
 }
 .home section .card-three .quiz-card .middle .quiz-name {
   margin: 0;
@@ -324,6 +328,31 @@
   height: 137px;
 }
 
+.leaderboard header {
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 100;
+  position: relative;
+  margin: 16px 24px;
+}
+.leaderboard header .top {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.leaderboard header .top a {
+  left: 24px;
+  display: flex;
+  align-self: center;
+  position: fixed;
+}
 body {
   background-color: #6a5ae0;
   margin: 0;
