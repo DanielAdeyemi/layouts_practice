@@ -200,6 +200,63 @@
 .home section .card-two img {
   border-radius: 50%;
 }
+.home section .card-three {
+  background: #ffffff;
+  border-radius: 32px;
+  margin: 0 0 30px;
+  padding: 24px;
+}
+@media screen and (min-width: 600px) {
+  .home section .card-three {
+    padding-bottom: 60px;
+  }
+}
+.home section .card-three .top-three {
+  display: flex;
+  justify-content: space-between;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #0c092a;
+}
+.home section .card-three .top-three a {
+  font-size: 14px;
+  color: #6a5ae0;
+  text-decoration: none;
+}
+.home section .card-three .quiz-card {
+  border: 2px solid #efeefc;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 8px 28px 8px 8px;
+}
+.home section .card-three .quiz-card .left {
+  margin-right: 16px;
+}
+.home section .card-three .quiz-card .middle .quiz-name {
+  margin: 0;
+}
+.home section .card-three .quiz-card .middle .quiz-description {
+  font-weight: normal;
+  font-size: 12px;
+  color: #858494;
+  margin: 6px 0px;
+}
+.home section .card-three .quiz-card .right {
+  margin-left: auto;
+}
 .home footer {
   position: fixed;
   display: block;
@@ -227,10 +284,10 @@
     height: 115px;
   }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
   .home footer #add-post {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     bottom: 15px;
   }
 }
