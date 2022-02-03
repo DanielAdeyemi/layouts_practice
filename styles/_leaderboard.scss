@@ -1,8 +1,9 @@
 .leaderboard {
 	header {
 		@include header;
-		position: relative;
-		margin: 16px 24px;
+		padding: 16px 24px 16px 0;
+		background-color: $royal-blue;
+		width: 100%;
 		.top {
 			font-family: Rubik;
 			font-style: normal;
@@ -22,6 +23,7 @@
 		}
 	}
 	section {
+		margin-top: 80px;
 		.switcher {
 			display: flex;
 			margin: 16px 24px;
@@ -36,7 +38,8 @@
 			text-align: center;
 			.active {
 				opacity: 1;
-				padding: 8px 47px;
+				padding: 8px 0px;
+				width: 50%;
 				color: $white;
 				background: $dull-lavender;
 				border-radius: 16px;
@@ -49,6 +52,18 @@
 			}
 		}
 
+		#dot {
+			position: absolute;
+			transform: translate(-50%);
+			left: 50%;
+			top: 150px;
+			@media screen and (min-width: $medium) {
+				top: 155px;
+			}
+			@media screen and (min-width: $large) {
+				top: 162px;
+			}
+		}
 		.board {
 			margin: 0 8px;
 			background: url(../assets/Rectangle.svg);
@@ -90,10 +105,13 @@
 				margin-right: 16px;
 				width: 8px;
 			}
+			.medal {
+				margin-left: auto;
+			}
 			.main {
 				display: flex;
 				align-items: center;
-				img {
+				.avatar {
 					border-radius: 50%;
 					width: 60px;
 					margin-right: 12px;

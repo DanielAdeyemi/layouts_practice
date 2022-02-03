@@ -333,8 +333,9 @@
   top: 0px;
   position: fixed;
   z-index: 100;
-  position: relative;
-  margin: 16px 24px;
+  padding: 16px 24px 16px 0;
+  background-color: #6a5ae0;
+  width: 100%;
 }
 .leaderboard header .top {
   font-family: Rubik;
@@ -353,6 +354,9 @@
   align-self: center;
   position: fixed;
 }
+.leaderboard section {
+  margin-top: 80px;
+}
 .leaderboard section .switcher {
   display: flex;
   margin: 16px 24px;
@@ -368,7 +372,8 @@
 }
 .leaderboard section .switcher .active {
   opacity: 1;
-  padding: 8px 47px;
+  padding: 8px 0px;
+  width: 50%;
   color: #ffffff;
   background: #9087e5;
   border-radius: 16px;
@@ -378,6 +383,22 @@
   margin: 0 auto;
   color: #e6e6e6;
   opacity: 0.7;
+}
+.leaderboard section #dot {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 150px;
+}
+@media screen and (min-width: 455px) {
+  .leaderboard section #dot {
+    top: 155px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .leaderboard section #dot {
+    top: 162px;
+  }
 }
 .leaderboard section .board {
   margin: 0 8px;
@@ -425,11 +446,14 @@
   margin-right: 16px;
   width: 8px;
 }
+.leaderboard section .board .medal {
+  margin-left: auto;
+}
 .leaderboard section .board .main {
   display: flex;
   align-items: center;
 }
-.leaderboard section .board .main img {
+.leaderboard section .board .main .avatar {
   border-radius: 50%;
   width: 60px;
   margin-right: 12px;
