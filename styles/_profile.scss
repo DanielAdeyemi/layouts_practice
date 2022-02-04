@@ -1,4 +1,13 @@
 .profile {
+	background: url(../assets/Bg_profile_left.svg) no-repeat right top,
+		url(../assets/BgProfileLeft.svg) left 42px no-repeat, $royal-blue;
+	header {
+		.top {
+			margin: 16px 24px 0;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
 	footer {
 		@include footer;
 	}
