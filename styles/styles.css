@@ -717,7 +717,7 @@
   height: 180px;
   transform-style: preserve-3d;
 }
-.leaderboard-2 section .box div {
+.leaderboard-2 section .box #second {
   position: absolute;
   top: 0;
   left: 0;
@@ -726,7 +726,7 @@
   transform-style: preserve-3d;
   transform: rotateX(21deg) rotateY(0deg);
 }
-.leaderboard-2 section .box div span {
+.leaderboard-2 section .box #second span {
   position: absolute;
   top: 0;
   left: 0;
@@ -735,7 +735,7 @@
   height: 100%;
   background: #9087e5;
 }
-.leaderboard-2 section .box div span:nth-child(1) {
+.leaderboard-2 section .box #second span:nth-child(1) {
   transform: rotateX(0) translate3d(0, 0, 104px);
   font-family: Rubik;
   font-style: normal;
@@ -746,7 +746,73 @@
   justify-content: center;
   color: #ffffff;
 }
-.leaderboard-2 section .box div span:nth-child(2) {
+.leaderboard-2 section .box #second span:nth-child(2) {
+  background-color: #aea7ec;
+  transform: rotateX(110deg) rotateX(10deg) translate3d(0, 0, 115px);
+}
+.leaderboard-2 section .box #first {
+  position: absolute;
+  top: -32px;
+  left: 104px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(21deg) rotateY(0deg);
+}
+.leaderboard-2 section .box #first span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #9087e5;
+}
+.leaderboard-2 section .box #first span:nth-child(1) {
+  transform: rotateX(0) translate3d(0, 0, 104px);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.leaderboard-2 section .box #first span:nth-child(2) {
+  background-color: #aea7ec;
+  transform: rotateX(110deg) rotateX(10deg) translate3d(0, 0, 115px);
+}
+.leaderboard-2 section .box #third {
+  position: absolute;
+  top: 10px;
+  left: 208px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(21deg) rotateY(0deg);
+}
+.leaderboard-2 section .box #third span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #9087e5;
+}
+.leaderboard-2 section .box #third span:nth-child(1) {
+  transform: rotateX(0) translate3d(0, 0, 104px);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.leaderboard-2 section .box #third span:nth-child(2) {
   background-color: #aea7ec;
   transform: rotateX(110deg) rotateX(10deg) translate3d(0, 0, 115px);
 }

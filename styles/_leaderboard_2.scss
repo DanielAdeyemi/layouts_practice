@@ -18,8 +18,7 @@
 			width: 104px;
 			height: 180px;
 			transform-style: preserve-3d;
-
-			div {
+			#second {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -27,7 +26,72 @@
 				height: 100%;
 				transform-style: preserve-3d;
 				transform: rotateX(21deg) rotateY(0deg);
-
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+					background: $dull-lavender;
+					&:nth-child(1) {
+						transform: rotateX(0) translate3d(0, 0, 104px);
+						font-family: Rubik;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 80px;
+						line-height: 140%;
+						display: flex;
+						justify-content: center;
+						color: $white;
+					}
+					&:nth-child(2) {
+						background-color: #aea7ec;
+						transform: rotateX(110deg) rotateX(10deg) translate3d(0, 0, 115px);
+					}
+				}
+			}
+			#first {
+				position: absolute;
+				top: -32px;
+				left: 104px;
+				width: 100%;
+				height: 100%;
+				transform-style: preserve-3d;
+				transform: rotateX(21deg) rotateY(0deg);
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+					background: $dull-lavender;
+					&:nth-child(1) {
+						transform: rotateX(0) translate3d(0, 0, 104px);
+						font-family: Rubik;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 80px;
+						line-height: 140%;
+						display: flex;
+						justify-content: center;
+						color: $white;
+					}
+					&:nth-child(2) {
+						background-color: #aea7ec;
+						transform: rotateX(110deg) rotateX(10deg) translate3d(0, 0, 115px);
+					}
+				}
+			}
+			#third {
+				position: absolute;
+				top: 10px;
+				left: 208px;
+				width: 100%;
+				height: 100%;
+				transform-style: preserve-3d;
+				transform: rotateX(21deg) rotateY(0deg);
 				span {
 					position: absolute;
 					top: 0;
