@@ -1,0 +1,12 @@
+.leaderboard-2 {
+	header {
+		@include header-leaderboard;
+	}
+
+	section {
+		margin-top: 80px;
+		.switcher {
+			@include switcher;
+		}
+	}
+}

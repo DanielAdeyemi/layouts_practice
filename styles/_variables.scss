@@ -95,6 +95,30 @@ $large: 600px;
 	z-index: 100;
 }
 
+@mixin header-leaderboard {
+	@include header;
+	padding: 16px 24px 16px 0;
+	background-color: $royal-blue;
+	width: 100%;
+	.top {
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 150%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $white;
+		a {
+			left: 24px;
+			display: flex;
+			align-self: center;
+			position: fixed;
+		}
+	}
+}
+
 @mixin time-light {
 	position: absolute;
 	width: 28.43px;
@@ -102,6 +126,34 @@ $large: 600px;
 	left: 12.45px;
 	top: 5.17px;
 	color: $white;
+}
+
+@mixin switcher {
+	display: flex;
+	margin: 16px 24px;
+	background: rgb(12, 9, 42, 0.3);
+	border-radius: 20px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	align-items: center;
+	text-align: center;
+	.active {
+		opacity: 1;
+		padding: 8px 0px;
+		width: 50%;
+		color: $white;
+		background: $dull-lavender;
+		border-radius: 16px;
+		margin: 3px;
+	}
+	.inactive {
+		margin: 0 auto;
+		color: $grey-4;
+		opacity: 0.7;
+	}
 }
 
 @mixin footer {

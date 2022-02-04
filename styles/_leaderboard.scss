@@ -1,55 +1,11 @@
 .leaderboard {
 	header {
-		@include header;
-		padding: 16px 24px 16px 0;
-		background-color: $royal-blue;
-		width: 100%;
-		.top {
-			font-family: Rubik;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 24px;
-			line-height: 150%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: $white;
-			a {
-				left: 24px;
-				display: flex;
-				align-self: center;
-				position: fixed;
-			}
-		}
+		@include header-leaderboard;
 	}
 	section {
 		margin-top: 80px;
 		.switcher {
-			display: flex;
-			margin: 16px 24px;
-			background: rgb(12, 9, 42, 0.3);
-			border-radius: 20px;
-			font-family: Rubik;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 150%;
-			align-items: center;
-			text-align: center;
-			.active {
-				opacity: 1;
-				padding: 8px 0px;
-				width: 50%;
-				color: $white;
-				background: $dull-lavender;
-				border-radius: 16px;
-				margin: 3px;
-			}
-			.inactive {
-				margin: 0 auto;
-				color: $grey-4;
-				opacity: 0.7;
-			}
+			@include switcher;
 		}
 
 		#dot {
