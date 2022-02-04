@@ -678,6 +678,8 @@
   position: fixed;
 }
 .leaderboard-2 section {
+  position: relative;
+  width: 100%;
   margin-top: 80px;
 }
 .leaderboard-2 section .switcher {
@@ -706,6 +708,47 @@
   margin: 0 auto;
   color: #e6e6e6;
   opacity: 0.7;
+}
+.leaderboard-2 section .box {
+  position: absolute;
+  top: 394px;
+  left: 28px;
+  width: 104px;
+  height: 180px;
+  transform-style: preserve-3d;
+}
+.leaderboard-2 section .box div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(21deg) rotateY(0deg);
+}
+.leaderboard-2 section .box div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #9087e5;
+}
+.leaderboard-2 section .box div span:nth-child(1) {
+  transform: rotateX(0) translate3d(0, 0, 104px);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.leaderboard-2 section .box div span:nth-child(2) {
+  background-color: #aea7ec;
+  transform: rotateX(110deg) rotateX(10deg) translate3d(0, 0, 115px);
 }
 
 body {
