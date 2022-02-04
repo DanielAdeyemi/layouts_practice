@@ -8,6 +8,123 @@
 			justify-content: space-between;
 		}
 	}
+
+	section {
+		#avatar {
+			position: absolute;
+			transform: translate(-50%);
+			left: 50%;
+			top: 42px;
+		}
+
+		.main {
+			padding-bottom: 120px;
+			background-color: $white;
+			margin: 68px 8px 0;
+			border-radius: 32px 32px 0px 0px;
+			.name {
+				padding-top: 48px;
+				font-family: Rubik;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 150%;
+				text-align: center;
+				color: $black;
+			}
+			.ranks {
+				#points,
+				#world-rank,
+				#local-rank {
+					min-width: 85px;
+				}
+				margin: 24px 24px 16px;
+				background-color: $royal-blue;
+				padding: 16px 0;
+				border-radius: 20px;
+				display: flex;
+				justify-content: space-around;
+				.logo {
+					svg {
+						display: block;
+						margin: 3px auto;
+					}
+				}
+
+				.border {
+					background: linear-gradient(
+						180deg,
+						rgba(255, 255, 255, 0.1) 0%,
+						rgba(255, 255, 255, 0.5) 46.63%,
+						rgba(255, 255, 255, 0.1) 100%
+					);
+					width: 1px;
+				}
+
+				.text {
+					font-family: Rubik;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 150%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+					color: $white;
+					opacity: 0.5;
+				}
+				.value {
+					font-family: Rubik;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 150%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: $white;
+				}
+			}
+			.badges {
+				#top {
+					margin: 16px auto;
+					display: flex;
+					justify-content: space-around;
+					span {
+						font-family: Rubik;
+						font-style: normal;
+						font-size: 14px;
+						line-height: 140%;
+						text-align: center;
+						font-weight: normal;
+						color: $grey-2;
+						&.active {
+							font-weight: bold;
+							color: $royal-blue;
+							&::after {
+								transform: translateX(-50%);
+								border-radius: 100%;
+								position: absolute;
+								background: $royal-blue;
+								height: 6px;
+								content: "";
+								top: 365px;
+								width: 6px;
+								left: 18%;
+							}
+						}
+					}
+				}
+				.row {
+					margin: 24px 0;
+					display: flex;
+					justify-content: space-around;
+				}
+			}
+		}
+	}
 	footer {
 		@include footer;
 	}

@@ -479,6 +479,108 @@
   display: flex;
   justify-content: space-between;
 }
+.profile section #avatar {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 42px;
+}
+.profile section .main {
+  padding-bottom: 120px;
+  background-color: #ffffff;
+  margin: 68px 8px 0;
+  border-radius: 32px 32px 0px 0px;
+}
+.profile section .main .name {
+  padding-top: 48px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #0c092a;
+}
+.profile section .main .ranks {
+  margin: 24px 24px 16px;
+  background-color: #6a5ae0;
+  padding: 16px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.profile section .main .ranks #points,
+.profile section .main .ranks #world-rank,
+.profile section .main .ranks #local-rank {
+  min-width: 85px;
+}
+.profile section .main .ranks .logo svg {
+  display: block;
+  margin: 3px auto;
+}
+.profile section .main .ranks .border {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 46.63%, rgba(255, 255, 255, 0.1) 100%);
+  width: 1px;
+}
+.profile section .main .ranks .text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.profile section .main .ranks .value {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.profile section .main .badges #top {
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.profile section .main .badges #top span {
+  font-family: Rubik;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  font-weight: normal;
+  color: #858494;
+}
+.profile section .main .badges #top span.active {
+  font-weight: bold;
+  color: #6a5ae0;
+}
+.profile section .main .badges #top span.active::after {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #6a5ae0;
+  height: 6px;
+  content: "";
+  top: 365px;
+  width: 6px;
+  left: 18%;
+}
+.profile section .main .badges .row {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-around;
+}
 .profile footer {
   position: fixed;
   display: block;
