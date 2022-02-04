@@ -648,6 +648,9 @@
   height: 137px;
 }
 
+.leaderboard-2 {
+  background: url(../assets/BkgO.svg) center 246px no-repeat, #6a5ae0;
+}
 .leaderboard-2 header {
   left: 0px;
   top: 0px;
